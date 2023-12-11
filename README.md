@@ -3,8 +3,8 @@
 In order to use the app:
 
 * clone the repo
-* open console in your repo and execute : npm install node
-* and execute node app.js
+* open console in your repo and execute : npm install
+* and execute: node app.js
 
 Now to consume the services you can use your favorite http request handler and consume the following services:
 
@@ -32,3 +32,20 @@ Get movies example:
 (keyword is not required)
 url http://localhost:3000/getMovies?keyword=spiderman
 
+Add favorite example:
+
+http://localhost:3000/addFav
+
+body:
+{
+    "id":"9613",
+    "token":"1342"
+}
+
+Get favorites example:
+
+http://localhost:3000/getFav
+body:
+{
+    "token":"0"
+}
